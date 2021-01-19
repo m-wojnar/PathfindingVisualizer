@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<?import javafx.scene.shape.Circle?>
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="pl.mwojnar.controllers.MainWindowController"
+      prefHeight="800.0" prefWidth="1100.0">
+
+    <VBox minWidth="300" maxWidth="300" spacing="40" alignment="CENTER">
+
+        <GridPane alignment="center" hgap="8" vgap="8">
+
+            <Label text="Width:"
+                   GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+            <TextField fx:id="widthText" text="50"
+                   GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+            <Label text="Height:"
+                   GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+            <TextField fx:id="heightText" text="50"
+                   GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+            <Label text="Algorithm"
+                   GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+
+            <ChoiceBox fx:id="algorithmText"
+                    GridPane.columnIndex="1" GridPane.rowIndex="2">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="DFS" />
+                        <String fx:value="BFS" />
+                        <String fx:value="Dijkstra" />
+                        <String fx:value="A*" />
+                    </FXCollections>
+                </items>
+            </ChoiceBox>
+        </GridPane>
+
+        <GridPane alignment="center" hgap="8" vgap="8">
+
+            <Button text="Resize area" onAction="#resize"
+                    GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+            <Button text="Reset area" onAction="#reset"
+                    GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+            <Button text="Random walls" onAction="#randomWalls"
+                   GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+            <Button text="Generate maze" onAction="#generateMaze"
+                    GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+            <Button text="Start animation" onAction="#start" fx:id="startButton"
+                    GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+
+            <Button text="Stop animation" onAction="#stop" disable="true" fx:id="stopButton"
+                    GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        </GridPane>
+
+        <GridPane alignment="center" hgap="8" vgap="8">
+            <Circle fill="#333333" radius="10"
+                    GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+            <Label text="Cell"
+                    GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+            <Circle fill="#777777" radius="10"
+                    GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+            <Label text="Wall"
+                   GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+            <Circle fill="#0695AA" radius="10"
+                    GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+
+            <Label text="Start"
+                   GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+            <Circle fill="#8B39C6" radius="10"
+                    GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+
+            <Label text="End"
+                   GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+            <Circle fill="#FFFE6A" radius="10"
+                    GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+
+            <Label text="Visited"
+                   GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+            <Circle fill="#00E66F" radius="10"
+                    GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+
+            <Label text="Path"
+                   GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+        </GridPane>
+
+    </VBox>
+
+    <Canvas fx:id="canvas" width="800" height="800" onMouseClicked="#addWall" />
+
+</HBox>
