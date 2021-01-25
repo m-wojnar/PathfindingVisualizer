@@ -21,5 +21,7 @@ public abstract class PathfindingAlgorithm {
         this.visitOrder = new LinkedList<>();
     }
 
-    public abstract List<Node> getVisitOrder();
+    public List<Node> getVisitOrder() {
+        return visitOrder;
+    }
 }

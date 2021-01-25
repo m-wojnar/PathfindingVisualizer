@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64de1886-f804-4b5b-a8e7-00460bb0bffd" name="Default Changelist" comment="" />
+    <list default="true" id="64de1886-f804-4b5b-a8e7-00460bb0bffd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/mwojnar/algorithms/AStar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/mwojnar/algorithms/AStar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/mwojnar/algorithms/BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/mwojnar/algorithms/BFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/mwojnar/algorithms/DFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/mwojnar/algorithms/DFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/mwojnar/algorithms/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/mwojnar/algorithms/Dijkstra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/mwojnar/algorithms/PathfindingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/mwojnar/algorithms/PathfindingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/mwojnar/controllers/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/mwojnar/presenters/MainWindowPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pl/mwojnar/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pl/mwojnar/main.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +55,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -102,5 +119,20 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>

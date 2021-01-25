@@ -1,4 +1,4 @@
-package pl.mwojnar.controllers;
+package pl.mwojnar.presenters;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -14,7 +14,7 @@ import pl.mwojnar.utils.Vector2d;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class MainWindowController  {
+public class MainWindowPresenter {
 
     private static final double BORDER_THICKNESS = 0.3;
     private static final double RANDOM_FILL_FACTOR = 0.35;
@@ -247,7 +247,7 @@ public class MainWindowController  {
         algorithm = switch (algorithmText.getValue()) {
             case "DFS" -> new DFS(s, graph);
             case "BFS" -> new BFS(s, graph);
-            case "Dijkstra" -> new Dijkstra(s, graph);
+            case "Dijkstra" -> new Dijkstra(s, e, graph, width);
             case "A*" -> new AStar(s, e, graph, width);
             default -> null;
         };

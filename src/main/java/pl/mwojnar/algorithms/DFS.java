@@ -20,9 +20,4 @@ public class DFS extends PathfindingAlgorithm {
             }
         }
     }
-
-    @Override
-    public List<Node> getVisitOrder() {
-        return visitOrder;
-    }
 }

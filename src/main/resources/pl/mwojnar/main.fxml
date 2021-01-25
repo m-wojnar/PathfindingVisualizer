@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Circle?>
 <HBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
-      fx:controller="pl.mwojnar.controllers.MainWindowController"
+      fx:controller="pl.mwojnar.presenters.MainWindowPresenter"
       prefHeight="800.0" prefWidth="1100.0">
 
     <VBox minWidth="300" maxWidth="300" spacing="40" alignment="CENTER">

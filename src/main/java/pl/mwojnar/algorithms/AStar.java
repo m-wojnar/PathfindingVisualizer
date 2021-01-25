@@ -19,11 +19,11 @@ public class AStar extends PathfindingAlgorithm {
         aStar();
     }
 
-    private int heuristics(int u, int v) {
+    protected int heuristics(int u, int v) {
         return Vector2d.fromInt(u, width).manhattanDistance(Vector2d.fromInt(v, width));
     }
 
-    private void aStar() {
+    protected void aStar() {
         var queue = new PriorityQueue<Pair<Integer, Integer>>(Comparator.comparing(Pair::getKey));
         queue.add(new Pair<>(0, start));
 
@@ -43,10 +43,5 @@ public class AStar extends PathfindingAlgorithm {
                 }
             }
         }
-    }
-
-    @Override
-    public List<Node> getVisitOrder() {
-        return visitOrder;
     }
 }
